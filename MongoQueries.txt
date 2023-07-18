@@ -1,0 +1,36 @@
+1). for using or create database
+--use 'databasename'--
+
+2). for adding data in collection 
+--db.'collectionName'.insertMany([{//data}])--
+--db.'collectionName'.insertOne({//data})--
+
+3). for display data
+--db.'collectionName'.find()--
+
+4). for display data using pretty funct.
+--db.'collectionName'.find().pretty()--
+
+5). for display of top 1 data
+--db.'collectionName'.findOne()--
+
+6). for display specific column
+--db.'collectionName'.find({},{'column' : 1, 'column' : 1, 'column' : 1})--
+
+7). for display data by order by on specific column
+--db.'collectionName'.find().sort({'column' : 1 }) and -1 for descending--
+
+8). for display of n number of data only
+--db.'collectionName'.find().limit(n)--
+
+9). for skip n number of data
+--db.'collectionName'.find().skip(n)--
+
+10). for data count
+--db.'collectionName'.find().count()--
+
+11). for deleting collection
+--db.'collectionName'.drop()--
+
+12) for deleting database
+--db.dropDatabase()--
